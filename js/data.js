@@ -22,7 +22,7 @@ function addNewEntry(){
 }
 
 function getEntry() {
-  if(localStorage.product){
+  if(localStorage.entry){
     var entries = localStorage.getItem('entry');
     var parsed = JSON.parse(entry);
 
