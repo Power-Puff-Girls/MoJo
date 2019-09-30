@@ -2,8 +2,11 @@
 
 body {
   margin: 0 auto;
+  color: white;
   text-align: center;
   width: 960px;
+  background-image: url("../img/stripes-background.png");
+  background-size: 100vw;
 }
 
 
@@ -23,18 +26,24 @@ li {
   float:left;
 }
 
-ul li div p{
+ul li div p {
   vertical-align: middle;
 }
 
-.toplinks{
+a {
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.toplinks {
   margin: 1em 3em 1em 4em;
 }
 
 
 /* MAIN */
 
-main{
+main {
   width:100%;
 }
 
@@ -45,7 +54,7 @@ h1 {
   text-align: left;
 }
 
-h2{
+h2 {
   margin: 1.3em;
   font-weight: bold;
   font-size:1.2em;
@@ -55,7 +64,7 @@ h2{
 
 /* FOOTER */
 
-footer{
+footer {
   height:25px;
   margin-top:3vw;
 }
