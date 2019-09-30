@@ -48,7 +48,7 @@ Title: Resources
 As a user I want resources so that I can get help when needed.
 
 
-	Feature Task:
+Feature Task:
 Give additional information about support systems and other places other than MoJo
 Have a window that appears when a user has had negative moods for 3 or more days in a week that provides additional resources.
 	Acceptance Test:
