@@ -1,1 +1,65 @@
 /* css for header and footers on all pages */
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  width: 960px;
+}
+
+
+/* HEADER */
+
+ul {
+  margin-left: 2em;
+}
+
+li {
+  display: inline-block;
+}
+
+#logoimg {
+  margin: 2vw;
+  vertical-align: middle;
+  float:left;
+}
+
+ul li div p{
+  vertical-align: middle;
+}
+
+.toplinks{
+  margin: 1em 3em 1em 4em;
+}
+
+.share{
+  
+}
+
+
+/* MAIN */
+
+main{
+  width:100%;
+}
+
+h1 {
+  margin: 1.3em;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+h2{
+  margin: 1.3em;
+  font-weight: bold;
+  font-size:1.2em;
+  text-align:left;
+}
+
+
+/* FOOTER */
+
+footer{
+  height:25px;
+  margin-top:3vw;
+}
