@@ -93,3 +93,5 @@ img sources
 flying.ppg.png https://www.forbes.com/sites/robsalkowitz/2018/11/12/powerpuff-girls-turn-20/#3d936bbc29ca
 
 internet, mojo, pogostick and helpMe https://giphy.com/gifs/cartoon-network-the-powerpuff-girls-TQbMZC7UngVH2
+
+neon.ppg.gif https://www.ign.com/boards/threads/i-watch-just-now-the-new-powerpuff-girls.454758772/
