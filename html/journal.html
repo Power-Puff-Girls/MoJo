@@ -5,45 +5,47 @@
 <head>
   <title>MoJo</title>
   <title>MoJo</title>
-  <link rel=“stylesheet” type="text/css" href="../css/reset.css"/>
+  <link rel=“stylesheet” type="text/css" href="../css/reset.css" />
   <link rel=“stylesheet” type=“text/css” href="../css/styles.css" />
   <link rel=“stylesheet” type=“text/css” href="../css/journal.css" />
 
 </head>
 
 <body>
-  <header>
-    <ul>
-      <li>
-        <div>
-          <img id=“logoimg” src=“https://via.placeholder.com/70x50"> <h3>MoJo</h3>
-        </div>
-      </li>
-      <li class=“toplinks”><a href=“index.html”>Home</a></li>
-      <li class=“toplinks”><a href=“html/about.html”>About Us</a> </li> <li class=“toplinks”><a
-            href=“html/journal.html”>Journal </a> </li> <li class=“toplinks”><a href=“html/reflect.html”>Reflections
-              </a> </li> <li class=“share”><img src=“https://via.placeholder.com/75"> </li> <li class=“share”><img
-                src=“https://via.placeholder.com/75"> </li> </ul> </header> <main>
-              <form id='newEntry'>
-                <h4>Add to your journal!</h4>
-                <fieldset>
+    <header>
+        <ul>
+          <li>
+            <div>
+              <img id="logoimg" src="https://placehold.it/70x50/222" />
+              <p>MOJO</p>
+            </div>
+          </li>
+          <li class="toplinks"><a href="index.html">Home</a></li>
+          <li class="toplinks"><a href="about.html">About Us</a></li>
+          <li class="toplinks"><a href="journal.html">Journal</a></li>
+          <li class="toplinks"><a href="reflect.html">Reflections</a></li>
+          <li class="share"><img src="https://placehold.it/12x12/10" /></li>
+          <li class="share"><img src="https://placehold.it/12x12/10" /></li>
+        </ul>
+      </header>
+  <main>
+    <form id='newEntry'>
+      <h4>Add to your journal!</h4>
+      <fieldset>
+        <label>How are you feeling today?</label>
+        <input id='moodChoice' name='inputMoodChoice'></br>
+        <label>Add to your journal:</label>
+        <input id='journalEntry' name='inputJournalEntry'></br>
+        <button id='txtBtn' value='submit'>Submit Entry</button>
+      </fieldset>
+    </form>
 
-                  <label>How are you feeling today?</label>
-                  <input id='moodChoice' name='inputMoodChoice'></br>
+    <p id='dailyMeme'>Meme of the day</p>
+  </main>
+  <footer>&copyPowerPuffGirls 2019</footer>
 
-                  <label>Add to your journal:</label>
-                  <input id='journalEntry' name='inputJournalEntry'></br>
-
-                  <button id='txtBtn' value='submit'>Submit Entry</button>
-                </fieldset>
-              </form>
-
-              <p id='dailyMeme'>Meme of the day</p>
-              </main>
-              <footer>&copyPowerPuffGirls 2019</footer>
-
-              <script src='../js/data.js'></script>
-              <script src='../js/chart.js'></script>
+  <script src='../js/data.js'></script>
+  <script src='../js/chart.js'></script>
 
 </body>
 
