@@ -89,3 +89,7 @@ Acceptance Test:
 Make sure that there is a space to leave comments for the day
 Make sure that the blurb is displayed. 
 
+img sources
+flying.ppg.png https://www.forbes.com/sites/robsalkowitz/2018/11/12/powerpuff-girls-turn-20/#3d936bbc29ca
+
+internet, mojo, pogostick and helpMe https://giphy.com/gifs/cartoon-network-the-powerpuff-girls-TQbMZC7UngVH2
