@@ -3,13 +3,15 @@
 
 // Global variables
 var addEntry = document.getElementById('newEntry');
-
-Entry.allEntries = [];
+var numDay = 0;
 
 // create empty arrays to store user's inputs
-Entry.date = [];
+Entry.allEntries = [];
+
+Entry.day = [];
 Entry.mood = [];
 Entry.text = [];
+
 
 //constructor function
 function Entry(mood, text, day) {
@@ -17,6 +19,7 @@ function Entry(mood, text, day) {
   this.text = text;
   this.day = day;
   Entry.allEntries.push(this);
+
 }
 
 addEntry.addEventListener('submit', handleNewEntry);
@@ -48,31 +51,33 @@ function hideJournal() {
   submitMessage.style.display = 'block';
 }
 
-function getEntry() {
-  if (localStorage.entry) {
-    var entries = localStorage.getItem('entry');
-    var parsed = JSON.parse(entries);
+// function getEntry() {
+//   if (localStorage.entry) {
+//     var entries = localStorage.getItem('entry');
+//     var parsed = JSON.parse(entries);
 
-    for (var i = 0; i < parsed.length; i++) {
-      new Entry(parsed[i].entry);
-    }
-  }
-}
+//     for (var i = 0; i < parsed.length; i++) {
+//       new Entry(parsed[i].entry);
+//     }
+//   }
+// }
 
 
 function newStoredData(){
   for(var i=0; i < Entry.allEntries.length; i++){
-    Entry.date.push(Entry.allEntries[i].date);
+    Entry.day.push(Entry.allEntries[i].day);
     Entry.mood.push(Entry.allEntries[i].mood);
-    Entry.mood.push(Entry.allEntries[i].text);
+    Entry.text.push(Entry.allEntries[i].text);
   }
 }
 
+// TODO: make a function that calls the graph after 7days of entries
+
 // parsing data
-function chartData(){
-  var dataEntry = localStorage.getItem('entry');
-  var parsedEntry = JSON.parse(dataEntry);
-}
+// function chartData(){
+//   var dataEntry = localStorage.getItem('entry');
+//   var parsedEntry = JSON.parse(dataEntry);
+// }
 
 //https://www.chartjs.org/docs/latest/
 function viewChart(){
@@ -114,4 +119,5 @@ function viewChart(){
     }
   });
 }
-viewChart();
+// getEntry();
+
