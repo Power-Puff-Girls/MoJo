@@ -7,7 +7,7 @@ Entry.text = [];
 
 function newStoredData(){
   for(var i=0; i < Entry.allEntries.length; i++){
-    Entry.date.push(Entry.allEntries[i].date);
+    Entry.date.push(Entry.allEntries[i].day);
     Entry.mood.push(Entry.allEntries[i].mood);
     Entry.mood.push(Entry.allEntries[i].text);
   }

@@ -19,9 +19,7 @@ addEntry.addEventListener('submit', handleNewEntry);
 //local storage for journal entries takes in user input to instantiate new objects
 function handleNewEntry(event) {
   event.preventDefault();
-  console.log(event.target);
   var myMoodValue = event.target.moodChoice.value;
-  console.log(myMoodValue);
   var myTextValue = event.target.journalEntry.value;
   var thisDayValue = event.target.day.value;
 
@@ -33,7 +31,6 @@ function handleNewEntry(event) {
 
   hideJournal();
 }
-console.log(handleNewEntry());
 
 //TODO: hide entry box after click submit; show entry logged message
 function hideJournal() {
