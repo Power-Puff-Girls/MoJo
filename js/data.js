@@ -14,7 +14,7 @@ Entry.text = [];
 
 
 //constructor function
-function Entry(mood, text, day) {
+function Entry(mood,text,day) {
   this.mood = mood;
   this.text = text;
   this.day = day;
@@ -23,25 +23,25 @@ function Entry(mood, text, day) {
 }
 
 addEntry.addEventListener('submit', handleNewEntry);
-
+console.log(Entry.allEntries);
 //local storage for journal entries takes in user input to instantiate new objects
 function handleNewEntry(event) {
   event.preventDefault();
-  console.log(event.target);
+
   var myMoodValue = event.target.moodChoice.value;
   console.log(myMoodValue);
   var myTextValue = event.target.journalEntry.value;
+  console.log(myTextValue);
   var thisDayValue = event.target.day.value;
-
+  console.log(thisDayValue);
+  console.log(Entry.allEntries);
   new Entry(myMoodValue, myTextValue, thisDayValue);
-
+  console.log(Entry.allEntries);
   var json = JSON.stringify(Entry.allEntries);
   localStorage.setItem('entry', json);
-  console.log(Entry.allEntries);
 
   hideJournal();
 }
-console.log(handleNewEntry());
 
 //TODO: hide entry box after click submit; show entry logged message
 function hideJournal() {
@@ -51,16 +51,16 @@ function hideJournal() {
   submitMessage.style.display = 'block';
 }
 
-// function getEntry() {
-//   if (localStorage.entry) {
-//     var entries = localStorage.getItem('entry');
-//     var parsed = JSON.parse(entries);
-
-//     for (var i = 0; i < parsed.length; i++) {
-//       new Entry(parsed[i].entry);
-//     }
-//   }
-// }
+function getEntry() {
+  if (localStorage.entry) {
+    var entries = localStorage.getItem('entry');
+    var parsed = JSON.parse(entries);
+    console.log(parsed);
+    for (var i = 0; i < parsed.length; i++) {
+      new Entry(parsed[i].mood, parsed[i].text, parsed[i].day);
+    }
+  }
+}
 
 
 function newStoredData(){
@@ -119,5 +119,5 @@ function viewChart(){
     }
   });
 }
-// getEntry();
+getEntry();
 
