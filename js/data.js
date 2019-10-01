@@ -1,6 +1,9 @@
 // local storage js here
 'use strict';
-var addEntry = document.getElementById('txtBtn');
+
+// Global variables
+var addEntry = document.getElementById('newEntry');
+
 Entry.allEntries = [];
 
 //constructor function
@@ -11,28 +14,34 @@ function Entry(mood, text, day) {
   Entry.allEntries.push(this);
 }
 
+addEntry.addEventListener('submit', handleNewEntry);
 
 //local storage for journal entries takes in user input to instantiate new objects
-function addNewEntry() {
-  var myMood = document.getElementById('moodChoice');
-  var myText = document.getElementById('journalEntry');
-  var thisDay = document.getElementById('day');
-  new Entry(myMood, myText, thisDay);
+function handleNewEntry(event) {
+  event.preventDefault();
+  console.log(event.target);
+  var myMoodValue = event.target.moodChoice.value;
+  console.log(myMoodValue);
+  var myTextValue = event.target.journalEntry.value;
+  var thisDayValue = event.target.day.value;
 
-  // var json = JSON.stringify(Entry.allEntries);
-  localStorage.setItem('entry', Entry.allEntries);
+  new Entry(myMoodValue, myTextValue, thisDayValue);
+
+  var json = JSON.stringify(Entry.allEntries);
+  localStorage.setItem('entry', json);
   console.log(Entry.allEntries);
-  renderSubmit();
+
+  hideJournal();
 }
+console.log(handleNewEntry());
+
 //TODO: hide entry box after click submit; show entry logged message
-function renderSubmit() {
+function hideJournal() {
   var journal = document.getElementById('newEntry');
   journal.style.display = 'none';
   var submitMessage = document.getElementById('submitMessage');
   submitMessage.style.display = 'block';
 }
-
-addEntry.addEventListener('submit', addNewEntry);
 
 function getEntry() {
   if (localStorage.entry) {
