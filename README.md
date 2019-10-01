@@ -2,7 +2,7 @@
 201 Final Project
 
 
-Authors
+**Authors**
 Ashlyn, Rosalyn, Shelby, and Raven
 
 Mood Journal site which tracks mood over a period of time with outside resources and about the creators page.
@@ -13,11 +13,9 @@ https://github.com/Power-Puff-Girls/MoJo/tree/master/Wireframe%20Images
 Domain Model:
 https://github.com/Power-Puff-Girls/MoJo/blob/master/Domain%20Model.jpg
 
-User Stories:
-
+**User Stories:**
 
 Title: Mood Tracker
-
 
 As a user I want to express my mood so that I can be encouraged to have daily introspection.
 
@@ -31,7 +29,6 @@ Title: Save Previous Entries
 
 As a user I want to see my information tracked to compare days so that I can see where I am struggling.
 
-
 Feature Task:
 Create a submit button to save user’s selection or input
 Local storage to store mood data
@@ -43,10 +40,10 @@ Make sure that the graph collects and displays the data that the user gives us
 Make sure the graph is easy to read and understand
 Check to ensure that storage is resetting after a predetermined period of time.
 
+
 Title: Resources
 
 As a user I want resources so that I can get help when needed.
-
 
 Feature Task:
 Give additional information about support systems and other places other than MoJo
@@ -54,10 +51,6 @@ Have a window that appears when a user has had negative moods for 3 or more days
 	Acceptance Test:
 Check that our links to resources are not broken
 Check that after 3 negative entries resources are shown
-
-
-
-
 
 
 Title: Navigation
@@ -69,29 +62,32 @@ Create a navigation bar
 Pages are clearly labeled with links to other pages.
 Pleasant color pallette.
 
-
 Acceptance Test:
 Make sure that navigation bar works.
 Make sure that everything is readable on different screens/browsers.
 Get feedback from others on color pallete.
 
+
 Title: Safe Space
 
 As a user I would like a safe space to reflect on my day so that I will feel comfortable using MoJo regularly. 
-
 
 Feature Task:
 Secure journal with a username for entry to website
 Create a blurb that tells the user that the site is not sponsored by outside sources and information is not shared.
 
-
 Acceptance Test:
 Make sure that there is a space to leave comments for the day
 Make sure that the blurb is displayed. 
 
-img sources
+
+## Resources and Links
+**Image Sources**
 flying.ppg.png https://www.forbes.com/sites/robsalkowitz/2018/11/12/powerpuff-girls-turn-20/#3d936bbc29ca
 
 internet, mojo, pogostick and helpMe https://giphy.com/gifs/cartoon-network-the-powerpuff-girls-TQbMZC7UngVH2
 
 neon.ppg.gif https://www.ign.com/boards/threads/i-watch-just-now-the-new-powerpuff-girls.454758772/
+
+**Other Links**
+Visual Studio Live Share to group program

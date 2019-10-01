@@ -1,11 +1,31 @@
 // chart js here
+
+// create empty arrays to store user's inputs
+Entry.date = [];
+Entry.mood = [];
+Entry.text = [];
+
+function newStoredData(){
+  for(var i=0; i < Entry.allEntries.length; i++){
+    Entry.date.push(Entry.allEntries[i].date);
+    Entry.mood.push(Entry.allEntries[i].mood);
+    Entry.mood.push(Entry.allEntries[i].text);
+  }
+}
+
+// parsing data
+function chartData(){
+  var dataEntry = localStorage.getItem('entry');
+  var parsedEntry = JSON.parse(dataEntry);
+}
+
 //https://www.chartjs.org/docs/latest/
 function viewChart(){
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: Entry.date,
       datasets: [{
         label: '# of Votes',
         data: [12, 19, 3, 5, 2, 3],
