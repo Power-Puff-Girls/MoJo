@@ -1,86 +1,35 @@
-// local storage js here
+// chart js here
 'use strict';
-
-// Global variables
-Entry.allEntries = [];
-var addEntry = document.getElementById('newEntry');
-// var numDay = 0;
-// var reflect = document.getElementById('reflect');
-
-
-// create empty arrays to store user's inputs
-Entry.day = [];
-Entry.mood = [];
-Entry.text = [];
-
-
-//constructor function
-// function Entry(mood, text, day) {
-//   this.mood = mood;
-//   this.text = text;
-//   this.day = day;
-//   Entry.allEntries.push(this);
-
-// }
-
-//local storage for journal entries takes in user input to instantiate new objects
-// function handleNewEntry(event) {
-//   event.preventDefault();
-//   // dayCounter();
-//   console.log(event.target);
-//   var myMoodValue = event.target.inputMoodChoice.value;
-//   console.log(myMoodValue);
-//   var myTextValue = event.target.journalEntry.value;
-//   console.log(myTextValue);
-//   var thisDayValue = event.target.inputDay.value;
-//   console.log(thisDayValue);
-
-//   new Entry(myMoodValue, myTextValue, thisDayValue);
-
-//   var json = JSON.stringify(Entry.allEntries);
-//   localStorage.setItem('entry', json);
-
-
-//   hideJournal();
-// }
 
 
 //reflections link event handler
 function handleChart() {
   // getEntry();
+  renderReflections();
   viewChart();
 }
 
 window.onload = handleChart();
 
-// TODO: Change to CSS hide show method
-//TODO: hide entry box after click submit; show entry logged message
-function hideJournal() {
-  var journal = document.getElementById('newEntry');
-  journal.style.display = 'none';
-  // var submitMessage = document.getElementById('submitMessage');
-  // submitMessage.style.display = 'block';
+
+
+
+function newStoredData() {
+  for (var i = 0; i < Entry.allEntries.length; i++) {
+    Entry.day.push(Entry.allEntries[i].day);
+    Entry.mood.push(Entry.allEntries[i].mood);
+    Entry.text.push(Entry.allEntries[i].text);
+  }
 }
 
-// function getEntry() {
-//   if (localStorage.entry) {
-//     var entries = localStorage.getItem('entry');
-//     var parsed = JSON.parse(entries);
-//     for (var i = 0; i < parsed.length; i++) {
-//       new Entry(parsed[i].mood, parsed[i].text, parsed[i].day);
-//     }
-//     // numDay = Entry.allEntries.length;
-//   }
-// }
-
-
-// function newStoredData() {
-//   for (var i = 0; i < Entry.allEntries.length; i++) {
-//     Entry.day.push(Entry.allEntries[i].day);
-//     Entry.mood.push(Entry.allEntries[i].mood);
-//     Entry.text.push(Entry.allEntries[i].text);
-//   }
-// }
+function renderReflections() {
+  var reflection = document.getElementById('entries');
+  for (var i = 0; i < Entry.text.length; i++) {
+    var newLi = document.createElement('li');
+    newLi.textContent = Entry.text[i];
+    reflection.appendChild(newLi);
+  }
+}
 
 // TODO: make a function that calls the graph after 7days of entries
 // function dayCounter() {
@@ -130,4 +79,3 @@ function viewChart() {
     }
   });
 }
-// addEntry.addEventListener('submit', handleNewEntry);
