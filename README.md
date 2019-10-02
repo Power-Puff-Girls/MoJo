@@ -93,8 +93,10 @@ terrible gif https://giphy.com/gifs/mtv-show-daria-eH0dkPPs1Yl32
 
 monkey hugging gif https://giphy.com/embed/42YlR8u9gV5Cw
 
+Squidward gif :https://giphy.com/gifs/funny-sponge-bob-Q9y3Fn3OzTMw8
+
 **Other Links**
 Visual Studio Live Share to group program
 
-Katy Perry Plastic Bag https://www.youtube.com/embed/rNYaw4EJpZo
+
 
