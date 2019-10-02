@@ -1,1 +1,13 @@
 /* css for journal page */
+input{
+  width:350px;
+  margin: 10px;
+  
+}
+#journalEntry{
+  height: 350px;
+
+}
+label{
+  display:block;
+}
