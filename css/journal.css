@@ -31,3 +31,8 @@ h4{
   font-size: 25px;
   margin:30px;
 }
+#txtBtn{
+  border-radius: 8px;
+  padding:5px;
+  margin:10px;
+}
