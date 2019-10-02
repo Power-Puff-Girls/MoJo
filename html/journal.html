@@ -33,6 +33,13 @@
       <h4>Add to your journal!</h4>
       
       <fieldset>
+
+        <label>What day of the week is it?</label>
+        <input id='day' name='inputDay' required></br>        
+
+        <label>How are you feeling today?</label>
+        <input id='moodChoice' name='inputMoodChoice' required></br>
+
         <label>Today is:</label>
         <select id ='day' name='inputDay'></br> 
           <option value= "1"> Day 1</option> 
@@ -52,10 +59,15 @@
           <option value= "cloud 9">Cloud 9</option>
           </select>
 
+
         <label>Reflect on your:</label>
         <input id='journalEntry' name='inputJournalEntry'></br>
 
+        <button id="txtBtn" value="submit" type="submit" required>Submit Entry</button>
+
+
         <button id="txtBtn" value="submit" type="submit">Submit Entry</button>
+
 
       </fieldset>
     </form>
