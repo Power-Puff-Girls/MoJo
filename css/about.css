@@ -1,8 +1,8 @@
 /* Css for the about me page */
-b{
-  text-align: center;
-}
 
+main{
+  line-height: 1.5em;
+}
 h2{
   text-align: center;
 }
@@ -14,8 +14,8 @@ h2{
 
 #notHead{
   width:20em;
-  height:30em;
-  margin: auto;
+  height:25em;
+  margin:auto;
   /* padding:5em */
 }
 
@@ -23,4 +23,3 @@ h2{
   columns: 2;
   
 }
-

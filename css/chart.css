@@ -1,8 +1,17 @@
 /* css for the chart */
+main{
+  line-height: 1.5em;
+}
+main img{
+  width:40%;
+}
 
 #myChart {
   background-color: white;
   max-width: 800px;
   max-height: 800px;
   margin: 0 auto;
+}
+h1{
+  text-align: center;
 }
