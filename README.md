@@ -89,5 +89,12 @@ internet, mojo, pogostick and helpMe https://giphy.com/gifs/cartoon-network-the-
 
 neon.ppg.gif https://www.ign.com/boards/threads/i-watch-just-now-the-new-powerpuff-girls.454758772/
 
+terrible gif https://giphy.com/gifs/mtv-show-daria-eH0dkPPs1Yl32
+
+monkey hugging gif https://giphy.com/embed/42YlR8u9gV5Cw
+
 **Other Links**
 Visual Studio Live Share to group program
+
+Katy Perry Plastic Bag https://www.youtube.com/embed/rNYaw4EJpZo
+
