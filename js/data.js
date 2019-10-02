@@ -27,10 +27,9 @@ function Entry(mood, text, day) {
 function handleNewEntry(event) {
   event.preventDefault();
   // dayCounter();
-
-  var myMoodValue = event.target.moodChoice.value;
+  var myMoodValue = event.target.inputMoodChoice.value;
   var myTextValue = event.target.journalEntry.value;
-  var thisDayValue = event.target.day.value;
+  var thisDayValue = event.target.inputDay.value;
 
   new Entry(myMoodValue, myTextValue, thisDayValue);
 
