@@ -4,60 +4,59 @@
 
 <head>
   <title>MoJo</title>
-  <link  href="/css/reset.css" rel="stylesheet" type="text/css"/>
-  <link  href="/css/styles.css" rel="stylesheet"  type="text/css"/>
-  <link href="/css/journal.css" rel="stylesheet"   type="text/css"/>
+  <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="/css/journal.css" rel="stylesheet" type="text/css" />
 
 </head>
 
 <body>
-    <header>
-        <ul>
-          <li>
-            <div>
-              <img id="logoimg" src="../img/Mojo-Jojo.jpg">
-              <p>MOJO</p>
-            </div>
-          </li>
-          <li class="toplinks"><a href="../index.html">Home</a></li>
-          <li class="toplinks"><a href="./about.html">About Us</a></li>
-          <li class="toplinks"><a href="./journal.html">Journal</a></li>
-          <li class="toplinks"><a href="./reflect.html">Reflections</a></li>
-          <li class="share"><img src="../img/fb-icon.png" /></li>
-          <li class="share"><img src="../img/twit-icon.png" /></li>
-        </ul>
-      </header>
+  <header>
+    <ul>
+      <li>
+        <div>
+          <img id="logoimg" src="../img/Mojo-Jojo.jpg">
+          <p>MOJO</p>
+        </div>
+      </li>
+      <li class="toplinks"><a href="../index.html">Home</a></li>
+      <li class="toplinks"><a href="./about.html">About Us</a></li>
+      <li class="toplinks"><a href="./journal.html">Journal</a></li>
+      <li class="toplinks"><a href="./reflect.html">Reflections</a></li>
+      <li class="share"><img src="../img/fb-icon.png" /></li>
+      <li class="share"><img src="../img/twit-icon.png" /></li>
+    </ul>
+  </header>
   <main>
-    <p id = "submitMessage">Thank you for your entry. See you tomorrow!</br><a href="./reflect.html">To view past entries, click here!</a></p>
+    <p id="submitMessage">Thank you for your entry. See you tomorrow!</br><a href="./reflect.html">To view past entries,
+        click here!</a></p>
     <form id='newEntry'>
       <h4>Add to your journal!</h4>
-      
+
       <fieldset>
 
         <label>Today is:</label>
-        <select id ='day' name='inputDay'></br> 
-          <option value= "1"> Day 1</option> 
-          <option value= "2"> Day 2</option>
-          <option value= "3"> Day 3</option>
-          <option value= "4"> Day 4</option>
-          <option value= "5"> Day 5</option>
-          <option value= "6"> Day 6</option>       
-          <option value= "7"> Day 7</option>           
-          </select>
+        <select id='day' name='inputDay'></br>
+          <option value="1"> Day 1</option>
+          <option value="2"> Day 2</option>
+          <option value="3"> Day 3</option>
+          <option value="4"> Day 4</option>
+          <option value="5"> Day 5</option>
+          <option value="6"> Day 6</option>
+          <option value="7"> Day 7</option>
+        </select>
         <label>How are you feeling today?</label>
         <select id='moodChoice' name='inputMoodChoice'></br>
-          <option value= "terrible">Terrible</option> 
-          <option value= "plastic bag">Plastic bag</option>
-          <option value= "could use support">Could use support</option>
-          <option value= "on top of it">On top of it</option>
-          <option value= "cloud 9">Cloud 9</option>
-          </select>
+          <option value="terrible">Terrible</option>
+          <option value="Squidward">Squidward</option>
+          <option value="could use support">Could use support</option>
+          <option value="on top of it">On top of it</option>
+          <option value="cloud 9">Cloud 9</option>
+        </select>
 
 
-        <label>Reflect on your:</label>
+        <label>Reflect on your day:</label>
         <input id='journalEntry' name='inputJournalEntry'></br>
-
-        <button id="txtBtn" value="submit" type="submit" required>Submit Entry</button>
 
 
         <button id="txtBtn" value="submit" type="submit">Submit Entry</button>
@@ -70,17 +69,23 @@
       <h2>Mood Key</h2>
       <div>
         <h3>Terrible</h3>
-        <iframe src="https://giphy.com/embed/eH0dkPPs1Yl32" width="150" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <iframe src="https://giphy.com/embed/eH0dkPPs1Yl32" width="150" height="100" frameBorder="0" class="giphy-embed"
+          allowFullScreen></iframe>
       </div>
-      
+
       <div>
-        <h3>Plastic bag</h3>
-        <iframe width="150" height="100" src="https://www.youtube.com/embed/rNYaw4EJpZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h3>Squidward</h3>
+        <iframe src="https://giphy.com/embed/Q9y3Fn3OzTMw8" width="480" height="345" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
       </div>
       <div>
         <h3>Could use support</h3>
-        <iframe src="https://giphy.com/embed/42YlR8u9gV5Cw" width="150" height="100" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <img id ="hug" src="../img/monkey.gif" alt="monkeys hugging gif">
       </div>
+      <div>
+        <h3>On top of it</h3>
+
+      </div>
+
     </section>
 
   </main>
