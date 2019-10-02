@@ -1,40 +1,39 @@
 /* css for header and footers on all pages */
 
 body {
-  margin: 0 auto;
-  color: #fff;
+ 
+  color: rgb(245, 234, 234);
   text-align: center;
-  /* width: 960px; */
-  background-image: url("../img/stripes-background.png");
+  background-image:url("../img/power-puff-background-3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   
-  background-size: 50vw;
 }
 
 
 /* HEADER */
 header{
   width: 100vw;
-  background-color: rgba(237,132,252);
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 20px 5px 20px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-text-shadow: 2px 2px #000000;
+  background-color: rgb(112, 72, 117);
+  -webkit-box-shadow: 1px 1px 10px 8px rgba(24, 23, 23, 0.75), 12px 14px 20px 9px rgba(125, 60, 131, 0.57); 
+  box-shadow: 1px 1px 10px 8px rgba(0,0,0,0.75), 12px 14px 20px 9px rgba(117, 25, 113, 0.57);
+  text-shadow: 2px 2px #0c0c0c;
 }
 ul {
-  margin-left: 2em;
+ margin:1vw;
 }
 
 li {
   display: inline-block;
-}
-
-#logoimg {
-  margin: 1vw;
-  vertical-align: middle;
-  float:left;
+  margin: 2vw 3vw; 
 }
 
 ul li div p {
   vertical-align: middle;
+}
+
+.share{
+margin-left: 4vw;
 }
 
 a {
