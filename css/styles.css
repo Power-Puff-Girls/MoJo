@@ -17,6 +17,7 @@ header{
   background-color: rgba(237,132,252);
   -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
 box-shadow: 5px 20px 5px 20px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+text-shadow: 2px 2px #000000;
 }
 ul {
   margin-left: 2em;
@@ -27,7 +28,7 @@ li {
 }
 
 #logoimg {
-  margin: 2vw;
+  margin: 1vw;
   vertical-align: middle;
   float:left;
 }
