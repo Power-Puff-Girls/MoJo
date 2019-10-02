@@ -5,7 +5,7 @@
 Entry.allEntries = [];
 var addEntry = document.getElementById('newEntry');
 var numDay = 0;
-var reflect = document.getElementById('reflect');
+// var reflect = document.getElementById('reflect');
 
 
 // create empty arrays to store user's inputs
@@ -26,7 +26,7 @@ function Entry(mood, text, day) {
 //local storage for journal entries takes in user input to instantiate new objects
 function handleNewEntry(event) {
   event.preventDefault();
-  dayCounter();
+  // dayCounter();
 
   var myMoodValue = event.target.moodChoice.value;
   var myTextValue = event.target.journalEntry.value;
@@ -81,11 +81,11 @@ function newStoredData() {
 }
 
 // TODO: make a function that calls the graph after 7days of entries
-function dayCounter() {
-  if (numDay === 6) {
-    viewChart();
-  }
-}
+// function dayCounter() {
+//   if (numDay === 6) {
+//     viewChart();
+//   }
+// }
 
 //https://www.chartjs.org/docs/latest/
 function viewChart() {
