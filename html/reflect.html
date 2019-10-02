@@ -4,40 +4,50 @@
 
 <head>
   <title>MoJo</title>
-  <link  href="/css/reset.css" rel="stylesheet" type="text/css"/>
-  <link  href="/css/styles.css" rel="stylesheet"  type="text/css"/>
-  <link href="/css/chart.css" rel="stylesheet"   type="text/css"/>
+  <link href="/css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+  <link href="/css/chart.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <header>
-        <ul>
-          <li>
-            <div>
-              <img id="logoimg" src="../img/Mojo-Jojo.jpg"><br>
-              <img src="../img/mojofont2.png"/>
-            </div>
-          </li>
-          <li class="toplinks"><a href="../index.html">Home</a></li>
-          <li class="toplinks"><a href="./about.html">About Us</a></li>
-          <li class="toplinks"><a href="./journal.html">Journal</a></li>
-          <li class="toplinks"><a href="./reflect.html">Reflections</a></li>
-        </ul>
-      </header>
+  <header>
+    <ul>
+      <li>
+        <div>
+          <img id="logoimg" src="../img/Mojo-Jojo.jpg"><br>
+          <img src="../img/mojofont2.png" />
+        </div>
+      </li>
+      <li class="toplinks"><a href="../index.html">Home</a></li>
+      <li class="toplinks"><a href="./about.html">About Us</a></li>
+      <li class="toplinks"><a href="./journal.html">Journal</a></li>
+      <li class="toplinks"><a href="./reflect.html">Reflections</a></li>
+    </ul>
+  </header>
   <main>
     <img src="../img/flying.ppg.png">
-    <h1 id="username"> Hello! Here is some information about your previous entries with MoJo</h1>
+    <h1 id="username"> Your MoJo summary:</h1>
 
-    <h3 id="mood">This week you have felt mostly mood. We hope that this is helpful.</h3>
+    <h3>This weeks entries:</h3>
+    <ul id="entries">
 
-    <h3>This weeks entries</h3>
-    <p id="entries">Entries</p>
-    <p>Please check out these links for help/information</p>
-    <p id="moodinfo">Info</p>
+    </ul>
 
-    <canvas id="myChart"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <section>
+      <p id="moodinfo">Visual Summary:</p>
+      <canvas id="myChart"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    </section>
+
+    <p>Please check out these links for help/information:</p>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
     <script src="../js/data.js"></script>
+    <script src="../js/chart.js"></script>
 
   </main>
 
