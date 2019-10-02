@@ -1,1 +1,13 @@
 /* css for home page */
+main{
+  line-height: 1.5em;
+  width:50%;
+  margin:auto;
+}
+h1, h2{
+  text-align: center;
+  
+}
+#signup{
+  margin-top: 2em;
+}
