@@ -10,4 +10,24 @@ input{
 }
 label{
   display:block;
+  padding:10px;
+}
+.gif{
+  display:inline-block;
+}
+.gif img{
+  height:150px;
+  width: 200px;
+  margin:1vw;
+  border: 5px solid rgb(112, 72, 117);
+}
+#moodKey{
+  margin-top:8vw;
+}
+h2{
+  margin-left:7vw;
+}
+h4{
+  font-size: 25px;
+  margin:30px;
 }
