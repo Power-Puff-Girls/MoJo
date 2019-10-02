@@ -2,19 +2,20 @@
 'use strict';
 
 // Global variables
+Entry.allEntries = [];
 var addEntry = document.getElementById('newEntry');
 var numDay = 0;
+var reflect = document.getElementById('reflect');
+
 
 // create empty arrays to store user's inputs
-Entry.allEntries = [];
-
 Entry.day = [];
 Entry.mood = [];
 Entry.text = [];
 
 
 //constructor function
-function Entry(mood,text,day) {
+function Entry(mood, text, day) {
   this.mood = mood;
   this.text = text;
   this.day = day;
@@ -22,26 +23,34 @@ function Entry(mood,text,day) {
 
 }
 
-addEntry.addEventListener('submit', handleNewEntry);
-console.log(Entry.allEntries);
 //local storage for journal entries takes in user input to instantiate new objects
 function handleNewEntry(event) {
   event.preventDefault();
+  dayCounter();
 
   var myMoodValue = event.target.moodChoice.value;
-  console.log(myMoodValue);
   var myTextValue = event.target.journalEntry.value;
-  console.log(myTextValue);
   var thisDayValue = event.target.day.value;
-  console.log(thisDayValue);
-  console.log(Entry.allEntries);
+
   new Entry(myMoodValue, myTextValue, thisDayValue);
-  console.log(Entry.allEntries);
+
   var json = JSON.stringify(Entry.allEntries);
   localStorage.setItem('entry', json);
 
+
+  console.log(numDay, 'test');
   hideJournal();
 }
+
+//reflections link event handler
+function handleChart(event) {
+  event.preventDefault();
+  getEntry();
+  viewChart();
+}
+
+reflect.addEventListener('click', handleChart);
+
 
 //TODO: hide entry box after click submit; show entry logged message
 function hideJournal() {
@@ -59,12 +68,14 @@ function getEntry() {
     for (var i = 0; i < parsed.length; i++) {
       new Entry(parsed[i].mood, parsed[i].text, parsed[i].day);
     }
+    numDay = Entry.allEntries.length;
+    console.log(numDay, 'test');
   }
 }
 
 
-function newStoredData(){
-  for(var i=0; i < Entry.allEntries.length; i++){
+function newStoredData() {
+  for (var i = 0; i < Entry.allEntries.length; i++) {
     Entry.day.push(Entry.allEntries[i].day);
     Entry.mood.push(Entry.allEntries[i].mood);
     Entry.text.push(Entry.allEntries[i].text);
@@ -72,23 +83,23 @@ function newStoredData(){
 }
 
 // TODO: make a function that calls the graph after 7days of entries
-
-// parsing data
-// function chartData(){
-//   var dataEntry = localStorage.getItem('entry');
-//   var parsedEntry = JSON.parse(dataEntry);
-// }
+function dayCounter() {
+  if (numDay === 6) {
+    viewChart();
+  }
+}
 
 //https://www.chartjs.org/docs/latest/
-function viewChart(){
+function viewChart() {
+  newStoredData();
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: Entry.date,
+      labels: Entry.day,
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Day of the Week',
+        data: Entry.mood,
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
@@ -119,5 +130,9 @@ function viewChart(){
     }
   });
 }
+addEntry.addEventListener('submit', handleNewEntry);
+console.log(addEntry);
 getEntry();
+
+
 
