@@ -43,14 +43,12 @@ function handleNewEntry(event) {
 }
 
 //reflections link event handler
-function handleChart(event) {
-  event.preventDefault();
+function handleChart() {
   getEntry();
   viewChart();
 }
 
-reflect.addEventListener('click', handleChart);
-
+window.onload = handleChart();
 
 //TODO: hide entry box after click submit; show entry logged message
 function hideJournal() {
