@@ -4,14 +4,20 @@ body {
   margin: 0 auto;
   color: #fff;
   text-align: center;
-  width: 960px;
+  /* width: 960px; */
   background-image: url("../img/stripes-background.png");
-  background-size: 100vw;
+  
+  background-size: 50vw;
 }
 
 
 /* HEADER */
-
+header{
+  width: 100vw;
+  background-color: rgba(237,132,252);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 20px 5px 20px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
 ul {
   margin-left: 2em;
 }
@@ -66,5 +72,8 @@ h2 {
 
 footer {
   height:25px;
+  width: 30%;
+  margin:auto;
   margin-top:3vw;
+  background-color: rgba(237,132,252, 0.6);
 }
