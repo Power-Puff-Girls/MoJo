@@ -2,11 +2,11 @@
 
 body {
  
-  color: rgb(245, 234, 234);
+  color: rgb(231, 223, 223);
   text-align: center;
   background-image:url("../img/power-puff-background-3.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100vw 100vw;
   
 }
 
@@ -14,13 +14,17 @@ body {
 /* HEADER */
 header{
   width: 100vw;
-  background-color: rgb(112, 72, 117);
+  background-color: rgb(129, 67, 109);
   -webkit-box-shadow: 1px 1px 10px 8px rgba(24, 23, 23, 0.75), 12px 14px 20px 9px rgba(125, 60, 131, 0.57); 
   box-shadow: 1px 1px 10px 8px rgba(0,0,0,0.75), 12px 14px 20px 9px rgba(117, 25, 113, 0.57);
   text-shadow: 2px 2px #0c0c0c;
+  color:rgb(231, 223, 223);
 }
 ul {
  margin:1vw;
+}
+#logoimg{
+  border-radius:58%;
 }
 
 li {
@@ -71,9 +75,13 @@ h2 {
 /* FOOTER */
 
 footer {
-  height:25px;
-  width: 30%;
-  margin:auto;
-  margin-top:3vw;
-  background-color: rgba(237,132,252, 0.6);
+  height:3vw;
+  margin-top: 4vw;
+  margin-bottom: 1vw;
+  padding-top:1vw;
+  width: 100%;
+  background-color: rgb(129, 67, 109);
+  -webkit-box-shadow: 1px 1px 10px 8px rgba(24, 23, 23, 0.75), 12px 14px 20px 9px rgba(125, 60, 131, 0.57); 
+  box-shadow: 1px 1px 10px 8px rgba(0,0,0,0.75), 12px 14px 20px 9px rgba(117, 25, 113, 0.57);
+  text-shadow: 2px 2px #0c0c0c;
 }
