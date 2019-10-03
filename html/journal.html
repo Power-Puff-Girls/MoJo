@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <header>
     <ul>
       <li>
@@ -26,15 +27,42 @@
       <li class="toplinks"><a href="./reflect.html">Reflections</a></li>
     </ul>
   </header>
+
   <main>
     
-    <form id='newEntry'>
-      <h4>Add to your journal!</h4>
+      <h4>Add to Your Journal!</h4>
+
+      <section id="moodKey">
+          <h2>Mood Key</h2>
+          <div class="gif">
+            <h3>Terrible</h3>
+            <img id="terrible" src="../img/terrible.gif" ></iframe>
+          </div>
+    
+          <div class="gif">
+            <h3>Squidward</h3>
+            <img id="squidward" src="../img/squidward.gif" alt="squidward">
+          </div>
+          <div class ="gif">
+            <h3>Could use support</h3>
+            <img id ="hug" src="../img/monkey.gif" alt="monkeys hugging gif">
+          </div>
+          <div class="gif">
+            <h3>On top of it</h3>
+              <img id="okay" src="../img/okay.gif" alt="girl signing okay">
+          </div>
+          <div class="gif">
+            <h3>Cloud 9</h3>
+              <img id="seal" src="../img/seal.gif" alt="happy seal">
+          </div>
+        </section>
+
+    <form id="newEntry">
 
       <fieldset>
 
         <label>Today is:</label>
-        <select required name='inputDay'></br>
+        <select required name="inputDay"></br>
           <option value=""hidden> Day</option>
           <option value="1"> Day 1</option>
           <option value="2"> Day 2</option>
@@ -45,7 +73,7 @@
           <option value="7"> Day 7</option>
         </select>
         <label>How are you feeling today?</label>
-        <select  required name='inputMoodChoice'></br>
+        <select  required name="inputMoodChoice"></br>
           <option value=""hidden> Mood</option>
           <option value="1">Terrible</option>
           <option value="2">Squidward</option>
@@ -56,44 +84,17 @@
 
 
         <label>Reflect on your day:</label>
-        <input required id='journalEntry' name='inputJournalEntry'></br>
-
+        <input required id="journalEntry" name="inputJournalEntry"></br>
 
         <button id="txtBtn" value="submit" type="submit">Submit Entry</button>
 
-
       </fieldset>
     </form>
-    <a href="./reflect.html" id='reflectLink'>To view past entries,
+    <a href="./reflect.html" id="reflectLink">To view past entries,
       click here!</a>
-    <section id='moodKey'>
-      <h2>Mood Key</h2>
-      <div class='gif'>
-        <h3>Terrible</h3>
-        <img id="terrible" src="../img/terrible.gif" ></iframe>
-      </div>
 
-      <div class='gif'>
-        <h3>Squidward</h3>
-        <img id="squidward" src="../img/squidward.gif" alt="squidward">
-      </div>
-      <div class ='gif'>
-        <h3>Could use support</h3>
-        <img id ="hug" src="../img/monkey.gif" alt="monkeys hugging gif">
-      </div>
-      <div class='gif'>
-        <h3>On top of it</h3>
-          <img id="okay" src="../img/okay.gif" alt="girl signing okay">
-      </div>
-      <div class='gif'>
-        <h3>Cloud 9</h3>
-          <img id="seal" src="../img/seal.gif" alt="happy seal">
-      </div>
-
-
-    </section>
-    
   </main>
+
   <footer>&copyPowerPuffGirls 2019</footer>
 
   <script src='../js/data.js'></script>
