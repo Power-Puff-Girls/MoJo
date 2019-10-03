@@ -3,16 +3,15 @@ main{
   line-height: 1.5em;
 }
 main img{
-  width:40%;
+  width:30%;
   border-radius: 15px;
-  margin-bottom:4vw;
 }
 h2{
   text-align: center;
 }
 
 #myChart {
-  background-color: rgba(181, 179, 184, 0.9);
+  background-color: rgba(216, 213, 219, 0.9);
   max-width: 800px;
   max-height: 800px;
   margin: 0 auto;
@@ -30,10 +29,13 @@ h1 {
   display:inline-block;
   font-family: 'Handlee', cursive;
   border: 1px solid rgb(129, 67, 109);
-  width: 200px;
+  width: 220px;
+  height: 200px;
   margin: auto .5vw;
   overflow: scroll;
   margin-bottom: 2vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8%;
 }
   ::-webkit-scrollbar { 
     display: none; 
