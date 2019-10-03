@@ -2,9 +2,20 @@
 
 main{
   line-height: 1.5em;
+  font-size: 1em;
 }
+img{
+  border-radius: 10%;
+}
+
 h2{
   text-align: center;
+}
+
+p{
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8%;
 }
 
 #usimg{
@@ -13,7 +24,7 @@ h2{
 } 
 
 .notHead{
-  width:50%;
+  width:48%;
   height:25em;
   
 }
@@ -22,9 +33,11 @@ h2{
   columns: 2;
 
 }
+
 .column1{
   padding: 10% 0 0 50%;
 }
+
 .column2{
   padding: 10% 20% 0 0;
 }
