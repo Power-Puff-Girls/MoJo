@@ -1,43 +1,61 @@
 /* css for journal page */
-input{
-  width:350px;
-  margin: 10px;
-  
-}
-#journalEntry{
-  height: 350px;
 
+
+h4 {
+  font-size: 45px;
+  margin-top: 30px;
+  /* padding-top: 30px; */
 }
-label{
-  display:block;
-  padding:10px;
-  font-weight:bold;
-  font-size: 18px;
+
+
+/* MAIN - MOOD KEY */
+
+#moodKey {
+  margin-top:8vw;
 }
-.gif{
+
+h2 {
+  text-align: center;
+}
+
+.gif {
   display:inline-block;
 }
-.gif img{
+
+.gif img {
   height:150px;
   width: 200px;
   margin:1vw;
   border: 5px solid rgb(112, 72, 117);
 }
-#moodKey{
-  margin-top:8vw;
+
+/* MAIN - FORM */
+
+input {
+  width:350px;
+  margin: 10px;
+  
 }
-h2{
-  text-align: center;
+
+#journalEntry {
+  height: 350px;
+  text-align: left;
 }
-h4{
-  font-size: 45px;
-  margin:30px;
+
+label {
+  display:block;
+  padding:10px;
+  font-weight:bold;
+  font-size: 18px;
 }
-#txtBtn{
+
+#txtBtn {
   border-radius: 8px;
   padding:5px;
   margin:10px;
 }
-#reflectLink{
+
+/* MAIN - REFLECTION */
+#reflectLink {
   font-style:italic;
 }
