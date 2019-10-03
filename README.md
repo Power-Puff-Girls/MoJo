@@ -107,4 +107,5 @@ diamond bullets: https://www.artishock.net/coding/css-list-styling-using-ascii-s
 
 hide scrollbars: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll
 
+logo edit - photopea.com
 
