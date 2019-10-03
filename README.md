@@ -98,6 +98,8 @@ Squidward gif :https://giphy.com/gifs/funny-sponge-bob-Q9y3Fn3OzTMw8
 **Other Links**
 Visual Studio Live Share to group program
 https://codepen.io/jnowland/pen/GZLQBw - select placeholder
+https://www.plus2net.com/javascript_tutorial/window-onload.php - window onload
+Credit to Erin Trainor for background image
 
 
 
