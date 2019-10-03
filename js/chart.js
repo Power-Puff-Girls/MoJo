@@ -54,7 +54,7 @@ function viewChart(arr) {
         label: 'Mood',
         data: mood,
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
+          'rgba(238, 206, 248, 0.5)',
           'rgba(54, 162, 235, 0.2)',
           'rgba(255, 206, 86, 0.2)',
           'rgba(75, 192, 192, 0.2)',
@@ -62,7 +62,7 @@ function viewChart(arr) {
           'rgba(255, 159, 64, 0.2)'
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
+          'rgba(131, 81, 206, 1)',
           'rgba(54, 162, 235, 1)',
           'rgba(255, 206, 86, 1)',
           'rgba(75, 192, 192, 1)',
