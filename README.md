@@ -101,5 +101,10 @@ https://codepen.io/jnowland/pen/GZLQBw - select placeholder
 https://www.plus2net.com/javascript_tutorial/window-onload.php - window onload
 Credit to Erin Trainor for background image
 
+https://www.w3schools.com/TAGS/tag_textarea.asp
+
+diamond bullets: https://www.artishock.net/coding/css-list-styling-using-ascii-special-characters/
+
+hide scrollbars: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll
 
 

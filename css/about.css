@@ -8,8 +8,10 @@ img{
   border-radius: 10%;
 }
 
-h2{
+h1{
   text-align: center;
+  font-size: 2.5vw;
+   margin-top: 2vw;
 }
 
 p{
