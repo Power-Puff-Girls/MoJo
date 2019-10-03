@@ -12,14 +12,19 @@ h2{
   border-radius: 50%;
 } 
 
-#notHead{
-  width:20em;
+.notHead{
+  width:50%;
   height:25em;
-  margin:auto;
-  /* padding:5em */
+  
 }
 
-#colum{
+#column{
   columns: 2;
-  
+
+}
+.column1{
+  padding: 10% 0 0 50%;
+}
+.column2{
+  padding: 10% 20% 0 0;
 }
