@@ -47,9 +47,7 @@ function handleNewEntry(event) {
 //TODO: hide entry box after click submit; show entry logged message
 function hideJournal() {
   var journal = document.getElementById('newEntry');
-  journal.style.display = 'none';
-  var submitMessage = document.getElementById('submitMessage');
-  submitMessage.style.display = 'block';
+  journal.style.display = 'none';  
 }
 
 function getEntry() {

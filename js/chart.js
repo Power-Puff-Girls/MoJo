@@ -9,7 +9,7 @@ var text = [];
 //reflections link event handler
 function handleChart() {
   var refData = getReflections();
-  // renderReflections();
+  renderReflections(refData);
   viewChart(refData);
 }
 
@@ -32,21 +32,15 @@ function newStoredData(arr) {
   }
 }
 
-// function renderReflections() {
-//   var reflection = document.getElementById('entries');
-//   for (var i = 0; i < Entry.text.length; i++) {
-//     var newLi = document.createElement('li');
-//     newLi.textContent = Entry.text[i];
-//     reflection.appendChild(newLi);
-//   }
-// }
+function renderReflections(arr) {
+  var reflection = document.getElementById('entries');
+  for (var i = 0; i < arr.length; i++) {
+    var newLi = document.createElement('li');
+    newLi.textContent = arr[i].text;
+    reflection.appendChild(newLi);
+  }
+}
 
-// TODO: make a function that calls the graph after 7days of entries
-// function dayCounter() {
-//   if (numDay === 6) {
-//     viewChart();
-//   }
-// }
 
 //https://www.chartjs.org/docs/latest/
 function viewChart(arr) {
