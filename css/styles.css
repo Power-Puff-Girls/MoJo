@@ -6,8 +6,10 @@ body {
   text-align: center;
   background-image:url("../img/power-puff-background-3.png");
   background-repeat: no-repeat;
-  background-size: 100vw 100vw;
-  font-family: 'Raleway', sans-serif;
+  background-size: 110% 110%;
+  background-position-y:-5px;
+  font-size:18px;
+  font-family:'Raleway', sans-serif;
 }
 
 
