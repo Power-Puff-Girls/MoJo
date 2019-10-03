@@ -1,13 +1,24 @@
 /* css for home page */
 main{
+  text-align: center;
   line-height: 1.5em;
   width:50%;
   margin:auto;
 }
 h1, h2{
-  text-align: center;
-  
+  text-align: center;  
+  margin: 1vw;
 }
+h1 {
+  font-size: 2.5vw;
+  margin-top: 2vw;
+}
+main img{
+  border-radius: 10%;
+  margin-bottom: 3vw;
+  margin-top: 2vw;
+}
+
 #signup{
   margin-top: 2em;
 }
