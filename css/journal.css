@@ -34,11 +34,11 @@ h2 {
 input {
   width:350px;
   margin: 10px;
-  
 }
 
 #journalEntry {
-  height: 350px;
+  height: 500px;
+  width: 500px;
   text-align: left;
 }
 
