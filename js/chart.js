@@ -1,35 +1,45 @@
 // chart js here
 'use strict';
 
+// create empty arrays to store user's inputs
+var day = [];
+var mood = [];
+var text = [];
 
 //reflections link event handler
 function handleChart() {
-  // getEntry();
-  renderReflections();
-  viewChart();
+  var refData = getReflections();
+  // renderReflections();
+  viewChart(refData);
 }
 
 window.onload = handleChart();
 
-
-
-
-function newStoredData() {
-  for (var i = 0; i < Entry.allEntries.length; i++) {
-    Entry.day.push(Entry.allEntries[i].day);
-    Entry.mood.push(Entry.allEntries[i].mood);
-    Entry.text.push(Entry.allEntries[i].text);
+function getReflections() {
+  if (localStorage.entry) {
+    var entries = localStorage.getItem('entry');
+    var parsed = JSON.parse(entries);
+    return parsed;
   }
 }
 
-function renderReflections() {
-  var reflection = document.getElementById('entries');
-  for (var i = 0; i < Entry.text.length; i++) {
-    var newLi = document.createElement('li');
-    newLi.textContent = Entry.text[i];
-    reflection.appendChild(newLi);
+
+function newStoredData(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    day.push(arr[i].day);
+    mood.push(arr[i].mood);
+    text.push(arr[i].text);
   }
 }
+
+// function renderReflections() {
+//   var reflection = document.getElementById('entries');
+//   for (var i = 0; i < Entry.text.length; i++) {
+//     var newLi = document.createElement('li');
+//     newLi.textContent = Entry.text[i];
+//     reflection.appendChild(newLi);
+//   }
+// }
 
 // TODO: make a function that calls the graph after 7days of entries
 // function dayCounter() {
@@ -39,16 +49,16 @@ function renderReflections() {
 // }
 
 //https://www.chartjs.org/docs/latest/
-function viewChart() {
-  newStoredData();
+function viewChart(arr) {
+  newStoredData(arr);
   var ctx = document.getElementById('myChart').getContext('2d');
   var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: Entry.day,
+      labels: day,
       datasets: [{
         label: 'Mood',
-        data: Entry.mood,
+        data: mood,
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',

@@ -7,12 +7,7 @@ var addEntry = document.getElementById('newEntry');
 var numDay = 0;
 // var reflect = document.getElementById('reflect');
 
-
-// create empty arrays to store user's inputs
-Entry.day = [];
-Entry.mood = [];
-Entry.text = [];
-
+getEntry();
 
 //constructor function
 function Entry(mood, text, day) {
@@ -65,8 +60,6 @@ function getEntry() {
     for (var i = 0; i < parsed.length; i++) {
       new Entry(parsed[i].mood, parsed[i].text, parsed[i].day);
     }
-    numDay = Entry.allEntries.length;
-    console.log(numDay, 'test');
   }
 }
 
@@ -128,7 +121,7 @@ function getEntry() {
 // }
 
 addEntry.addEventListener('submit', handleNewEntry);
-getEntry();
+
 
 
 
