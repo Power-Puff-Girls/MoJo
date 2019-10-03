@@ -14,7 +14,7 @@ body {
 /* HEADER */
 header{
   width: 100vw;
-  background-color: rgb(219, 106, 183);
+  background-color: rgb(129, 67, 109);
   -webkit-box-shadow: 1px 1px 10px 8px rgba(24, 23, 23, 0.75), 12px 14px 20px 9px rgba(125, 60, 131, 0.57); 
   box-shadow: 1px 1px 10px 8px rgba(0,0,0,0.75), 12px 14px 20px 9px rgba(117, 25, 113, 0.57);
   text-shadow: 2px 2px #0c0c0c;
